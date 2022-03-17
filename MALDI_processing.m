@@ -34,9 +34,10 @@ clear;                                    %do not touch
 
 % Set these Directories for the Script to work
 
-DataDirectory = 'E:\2019 Nicotine\Adult Quantitation\'; %EDIT'; contains the MALDI excel sheets, and the excel and mats directories
-ExcelDirectory = 'E:\2019 Nicotine\Adult Quantitation\Excels\'; %EDIT'; Excel dir is created within script, but needs a location you want it at
-MatsDirectory = 'E:\2019 Nicotine\Adult Quantitation\Mats\'; %EDIT'; MAT dir is created within script, but needs a location you want it at
+DataDirectory = 'E:\2021_THC\Adult_Quantitation\'; %EDIT'; contains the MALDI excel sheets, and the excel and mats directories
+ExcelDirectory = 'E:\2021_THC\Adult_Quantitation\Excels\'; %EDIT'; Excel dir is created within script, but needs a location you want it at
+MatsDirectory = 'E:\2021_THC\Adult_Quantitation\Mats\'; %EDIT'; MAT dir is created within script, but needs a location you want it at
+%Does work on MAC; just switch direction of "\" to "/"
 
 % Set the name of the second sheet in the excel file extracted from MSireader
 SecondSheetName = 'Average Spectrum'; %EDIT
@@ -93,7 +94,7 @@ for i = 1:size(tmpfile,2)
     X =  numeric(:,1);
     Y =  (numeric(:,2)); 
 % 
-%     Y =  normc(numeric(:,2)); %Deep learning Toolbox
+%     Y =  normc(numeric(:,2)); %Deep learning Toolbox, norm attempt
 
 
     [pks,locs,w,p] = findpeaks(Y);
