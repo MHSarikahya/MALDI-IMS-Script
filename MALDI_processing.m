@@ -1,3 +1,4 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Maldi processing %%%%%%%%%
 %%%% By: Mohammed Sarikahya %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -16,19 +17,20 @@
 %%                                                80.124124        12.4124124
 %%                             Must have all the values present for the selection (e.g., typically > 10k m/z)      
 %%
-  
-%% Before using this script, create a directory for 'Excels' and a directory
+ 
+%% USAGE:
+% Before using this script, create a directory for 'Excels' and a directory
 % for 'Mats', with those exact cases
 
 % Next, put all Maldi excels in one folder, or seperate by brain region, it
 % doesnt matter, since you will need to set the brain region within the
 % next few steps
 
-%% How to use: Read the lines 31 to 57, and fill in the places with 'EDIT'.
+% Read the lines 31 to 57, and fill in the places with 'EDIT'.
 % Then hit the F5 button on your keyboard to Run the script, or click Run in
 % the Editor tab above
 
-function [] = Step1_MALDI_processing()    %do not touch
+function [] = MALDI_processing()    %do not touch
 clc;                                      %do not touch
 clear;                                    %do not touch
 
