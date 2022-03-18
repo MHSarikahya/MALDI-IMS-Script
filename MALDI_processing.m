@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%% Maldi processing %%%%%%%%%
-%%%% By: Mohammed Sarikahya %%%
+%% Maldi processing %%%%%%%%%%%
+%% By: Mohammed H. Sarikahya %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Purpose: Generate all the neccessary calculations for Area under the curve calculation
 %%          including Peak assignment and calculation.
