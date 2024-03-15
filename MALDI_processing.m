@@ -4,8 +4,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Purpose: Generate all the neccessary calculations for Area under the curve calculation
 %%          including Peak assignment and calculation.
-%%          Comparisons of the interanlly generated peak list and one by the software
-%%          will reveal identical values, if not more Peak assignments.
+%%          Comparisons of the internally generated peak list and one by the software (e.g., MSIreader or others)
+%%          will reveal identical values, if not less Peak assignments. MSIreader (and others) do not auto
+%%          generate AUC's, and instead provides intensity values, which are highly experimentally
+%%          variable. AUC's provide a more robust assessment of the 'amount' or 'abundance' of a given metabolite.
 
 %% Dependencies: MATLAB ver 2019a and above 
 %%               Signal Processing Toolbox (Addon within Matlab)
@@ -15,8 +17,9 @@
 %%            values are organized with "m/z" in col A, and "intenisty" in col B so:
 %%                                                  m/z             intensity
 %%                                                80.124124        12.4124124
+%%                                                80.125332        10.6232232
 %%                             Must have all the values present for the selection (e.g., typically > 10k m/z)      
-%%
+%%                          
  
 %% USAGE:
 % Before using this script, create a directory for 'Excels' and a directory
@@ -30,16 +33,15 @@
 % Then hit the F5 button on your keyboard to Run the script, or click Run in
 % the Editor tab above
 
-function [] = MALDI_processing()    %do not touch
+function [] = MALDI_processing()          %do not touch
 clc;                                      %do not touch
 clear;                                    %do not touch
 
 % Set these Directories for the Script to work
-
 DataDirectory = 'E:\2021_THC\Adult_Quantitation\'; %EDIT'; contains the MALDI excel sheets, and the excel and mats directories
 ExcelDirectory = 'E:\2021_THC\Adult_Quantitation\Excels\'; %EDIT'; Excel dir is created within script, but needs a location you want it at
 MatsDirectory = 'E:\2021_THC\Adult_Quantitation\Mats\'; %EDIT'; MAT dir is created within script, but needs a location you want it at
-%Does work on MAC; just switch direction of "\" to "/"
+                  % Script does work on MACs; just switch direction of "\" to "/"
 
 % Set the name of the second sheet in the excel file extracted from MSireader
 SecondSheetName = 'Average Spectrum'; %EDIT
