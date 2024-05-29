@@ -14,7 +14,7 @@
 
 %% File Type: Must include the Average Spectrum for all available m/z within a sample selection;
 %%            Software used to access MALDI IMS images does NOT matter, as long as the spat out
-%%            values are organized with "m/z" in col A, and "intenisty" in col B so:
+%%            values are organized with "m/z" in col A, and "intensity" in col B so:
 %%                                                  m/z             intensity
 %%                                                80.124124        12.4124124
 %%                                                80.125332        10.6232232
