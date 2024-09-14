@@ -1,6 +1,7 @@
 Finds all Peaks and Calculates Areas Under the Curve (AUC) for MALDI mass spectrometry imaging analyses.
 
 Utilized in:
+
 Ng et al. 2024 [https://www.nature.com/articles/s41386-024-01853-y]
 
 De Felice et al. 2024 [https://www.sciencedirect.com/science/article/pii/S2667174324000740]
