@@ -14,7 +14,7 @@ Extensively tested by the Biological Mass Spectrometry and Tissue Imaging Resear
 on previously published and non-published datasets to confirm usability across several matrices, including
 Norharmane, DPH, FMP-10, ZnO, among others. 
 
-Tested on different computers with MATLAB 2019a and up.
+Tested on different computers with MATLAB 2019a and up. MSIreader was used to select regions to generate datasets, but other software also works.
 
 Runtime is approximately 3 minutes to analyze 1000 excel files that contain >25000 m/z values.
 
