@@ -2,6 +2,10 @@ Finds all Peaks and Calculates Areas Under the Curve (AUC) for MALDI mass spectr
 
 Utilized in:
 
+Sarikahya et al. 2025 [https://www.nature.com/articles/s41380-025-03113-x]
+
+Cousineau et al. 2025 [https://www.sciencedirect.com/science/article/pii/S0003267025006919]
+
 Ng et al. 2024 [https://www.nature.com/articles/s41386-024-01853-y]
 
 De Felice et al. 2024 [https://www.sciencedirect.com/science/article/pii/S2667174324000740]
